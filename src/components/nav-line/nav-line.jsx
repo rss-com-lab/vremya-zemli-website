@@ -6,7 +6,7 @@ import LocalizedLink from '../localized-link';
 import styles from './nav-line.module.scss';
 
 const NavLine = ({ parentStyles = {} }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('header');
 
   return (
     <div className={styles.navLine}>
