@@ -1,0 +1,58 @@
+$accent: #46af29;
+
+.nav-line {
+  padding: 10px 0;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1;
+
+  ul {
+    margin: 0;
+    padding: 0 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+    line-height: 1;
+
+    a {
+      display: inline-block;
+      padding: 10px 0px;
+      font-weight: 800;
+      font-size: 1rem *13/14;
+      transition: all 1s;
+
+      &:hover, &.active {
+        color: $accent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .nav-line {
+    ul {
+      text-align: left;
+    }
+    
+    li a {
+      padding: 15px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 330px) {
+  .nav-line li a {
+    font-size: 1rem;
+  }
+}

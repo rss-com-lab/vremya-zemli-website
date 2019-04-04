@@ -1,0 +1,31 @@
+$accent: #45a9f6;
+$bgc: #F3F4F5;
+
+
+.header {
+  background: #ffffff;
+  padding: 25px;
+  border-bottom: 3px solid $bgc;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .language-selector {
+    float: right;
+    margin-top: 20px;
+  }
+  .header {
+    h2 {
+      float: left;
+    }
+  }
+}
